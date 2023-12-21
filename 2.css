@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+ background-color: #ffff;
+ color: black;
+ padding-top: 05px;
+ padding-bottom: 10px;
+ cursor: pointer;
+ margin-left: 80px;
+ padding-top: 0px;
+}
+.nav-bar{
+    background-color: #0dbfaa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 0px;
+  
+   
+}
+.nav-bar ul li{
+    display: inline;  
+}
+.nav-bar ul li a{
+text-decoration: none;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.active{
+    background-color: red;
+    color: white;
+}
+.nav-bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+    
+}
+    .header{
+    border-top-left-radius: 10px;
+    background-color: #36f582;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#logo{
+    margin-top: -10px;
+    width: 80px;
+    position: absolute;
+    padding-top: 15px;
+    margin-left: 0px;
+}
+#check{
+   visibility: hidden;
+   position: absolute;
+}
+#nav-control{
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 105px;
+    margin-left: 5px;
+    transition: 500ms;
+    border-radius: 10px;
+    
+}
+#nav-control:hover{
+    transform: rotateZ(-720deg);
+    transition: 500ms;
+}
+input:checked ~ label #nav-control:hover{
+    transform: rotateZ(810deg);
+    transition: 500ms;   
+}input:checked ~ .head{
+   
+    margin-left: 300px;
+    margin-top: -1px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+transition: 500ms;
+}
+input:checked ~ label{
+    margin-top: -44px;
+   margin-left: 260px;
+   position: absolute; 
+   transition: 500ms;
+   z-index: 9;
+}
+input:checked ~ .nav-bar ul li{
+  
+    margin-bottom: 10px;
+    width: 300px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex; 
+    transition: 500ms;
+    
+     
+}
+input:checked ~ .nav-bar ul li a{
+    width: 300px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    position: absolute;
+    text-decoration: none;
+    transition: 500ms;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 500ms;
+    display: flex;
+    padding-top: 10px;
+    transition: 500ms;
+}

@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+ background-color: #ffff;
+ color: black;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ cursor: pointer;
+ margin-left: 120px;
+ padding-top: 15px;
+}
+.nav-bar{
+    background-color: #0dbfaa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 50px;
+  
+   
+}
+.nav-bar ul li{
+    display: inline;  
+}
+.nav-bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.active{
+    background-color: red;
+    color: white;
+}
+.nav-bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+    
+}
+.bootstrap{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #bf0db6;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header{
+    border-top-left-radius: 10px;
+    background-color: #36f582;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#logo{
+    margin-top: -10px;
+    width: 100px;
+    position: absolute;
+    padding-top: 15px;
+    margin-left: 20px;
+}
+#check{
+   visibility: hidden;
+   position: absolute;
+}
+#nav-control{
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 105px;
+    margin-left: 5px;
+    transition: 500ms;
+    border-radius: 10px;
+    
+}
+#nav-control:hover{
+    transform: rotateZ(-720deg);
+    transition: 500ms;
+}
+input:checked ~ label #nav-control:hover{
+    transform: rotateZ(810deg);
+    transition: 500ms;   
+}
+.header2{
+    display: none;
+    background-color: blue;
+    color: #ffff;
+}
+
+input:checked ~ .nav-bar{
+    width: 300px;
+    display: flex;
+    height: 150vh; 
+    margin-top: -36px;
+    text-align: left;
+    transition: 500ms;  
+}
+input:checked ~ .header2{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 500ms;
+}
+input:checked ~ #logo{
+    margin-top: 30px;
+    margin-left: 305px;
+    transition: 500ms;
+}
+input:checked ~ .head{
+   
+    margin-left: 300px;
+    margin-top: -1px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+transition: 500ms;
+}
+input:checked ~ label{
+    margin-top: -44px;
+   margin-left: 260px;
+   position: absolute; 
+   transition: 500ms;
+   z-index: 9;
+}
+input:checked ~ .nav-bar ul li{
+  
+    margin-bottom: 10px;
+    width: 300px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex; 
+    transition: 500ms;
+    
+     
+}
+input:checked ~ .nav-bar ul li a{
+    width: 300px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    position: absolute;
+    text-decoration: none;
+    transition: 500ms;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 500ms;
+    display: flex;
+    padding-top: 10px;
+    transition: 500ms;
+}
+input:checked ~ .nav-bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 0px;
+    transition: 500ms;   
+}
+.content{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: arial; 
+    margin-top: 10px;
+   
+}
+
+.display{
+   width: 40%;
+   height: 70%; 
+   box-shadow: 0 0 25px -3px rgba(0,0,0,0.4);
+   margin-left: 400px;
+}
+.display img{
+    width: 500px;
+    margin-left: 7px;   
+}
+
+input:checked ~ .content{
+    position: absolute;
+    margin-top: -880px;
+    margin-left: 200px;
+    padding-left: 110px;
+    transition: 500ms;
+}
+input:checked ~ .content .display{
+    width: 51%;
+    height: 70%; 
+    box-shadow: 0 0 25px -3px rgba(0,0,0,0.4);
+    margin-left: 280px;
+ }
+ .header3{
+    visibility: hidden;
+    
+ }
+ input:checked ~ .content .header3{
+    visibility: visible;
+    margin-top: 100px;
+    
+ }
+ input:checked ~ .content .header1{
+    display: none;
+    visibility: hidden;
+ }
+ .paragraph .pr{
+    font-weight: bolder;
+    color: dodgerblue;
+    
+ }
+ ul li{
+    padding-top: 10px;
+ }
+ .paragraph ul li{
+    padding-top: 20px;
+ }
+.list{
+    margin-left: 10px;
+}
+.paragraph ul li a{
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.paragraph ul li a:hover{
+    background-color: rgb(255, 194, 120);
+    text-decoration: underline;
+    color: red;
+}
+
+.paragraph .health h3{
+    background-color: #0d28bf;
+    color: #ffff;
+    font-family: cursive;
+    padding: 10px;
+}
+.paragraph .health{
+    
+    margin-left: 370px;
+    margin-top: -250px;
+    margin-right: 485px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: #bf0db6;
+    cursor: pointer;   
+}
+.paragraph .health:hover{
+background-color: #0d8dbf;
+color: white;
+transition: 500ms;
+}
+.paragraph .health:hover  h3{
+    background-color: #bf0d0d;
+    transition: 500ms;
+}
+.paragraph .health li{
+    padding: 10px;
+}
+input:checked ~ .content .paragraph .health{
+    margin-left: 400px;
+    margin-top: -250px;
+    margin-right: -575px;
+    padding-bottom: 10px;
+}
+
+.paragraph .spas h3{
+    background-color: #0dbf2b;
+    color: #ffff;
+    font-family: cursive;
+    padding: 10px;
+}
+.paragraph .spas{
+    margin-left: 830px;
+    margin-top: -254px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: #0718ff;
+    cursor: pointer;   
+}
+.paragraph .spas li{
+    padding: 10px;
+}
+
+.paragraph .spas:hover{
+    background-color: #0d8dbf;
+    color: white;
+    transition: 500ms;
+    }
+    .paragraph .spas:hover  h3{
+        background-color: #bf0d0d;
+        transition: 500ms;
+    }
+    .paragraph .spas li{
+        padding: 10px;
+    }
+
+input:checked ~ .content .paragraph .spas{
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: -100px;
+    padding-bottom: 10px;
+
+}
+ 
+.paragraph .eng h3{
+    background-color: #b00dbf;
+    color: #15e5ec;
+    font-family: cursive;
+    padding: 10px;
+}
+.paragraph .eng{
+    margin-left: 370px;
+    margin-top: 20px;
+    position: absolute;
+    border-style: solid;
+    margin-right: 515px;
+    padding-bottom: 10px;
+    border-color: red;
+    cursor: pointer;
+}
+.paragraph .eng li{
+    padding: 10px;
+}
+.paragraph .eng:hover{
+    background-color: #0d8dbf;
+    color: white;
+    transition: 500ms;
+    }
+    .paragraph .eng:hover  h3{
+        background-color: #bf0d0d;
+        transition: 500ms;
+    }
+ input:checked ~ .content .paragraph .eng{
+        margin-left: 500px;
+        margin-top: -252px;
+        margin-right: -1990px;
+        padding-bottom: 10px;
+    }
+
+    .paragraph .textile h3{
+        background-color: #0d8dbf;
+    color: #ffffff;
+    font-family: cursive;
+    padding: 10px;
+}
+.paragraph .textile h3:hover{
+
+    color: white;
+}
+.paragraph .textile{
+    margin-left: 830px;
+    margin-right: 40px;
+    margin-top: 20px;
+    position: absolute;
+    border-style: solid;
+    padding-bottom: 10px;
+    border-color: rgb(157, 255, 0);
+    cursor: pointer;
+}
+.paragraph .textile li{
+    padding: 10px;
+}
+.paragraph .textile:hover{
+    background-color: #0d8dbf;
+    color: white;
+    transition: 500ms;
+    }
+    .paragraph .textile:hover  h3{
+        background-color: #bf0d0d;
+        transition: 500ms;
+    }
+ input:checked ~ .content .paragraph .textile{
+        margin-left: 10px;
+        margin-right: -70px;
+        padding-bottom: 10px;
+    }
+
+        .paragraph .bse h3{
+        background-color: #0db9bf;
+    color: #ffffff;
+    font-family: cursive;
+    padding: 10px;
+}
+.paragraph .bse h3:hover{ 
+    color: white;
+}
+.paragraph .bse{
+   margin-left: 370px;
+    margin-top: 320px;
+    border-style: solid;
+   margin-right: 485px;
+ 
+    padding-bottom: 10px;
+    border-color: rgb(255, 251, 0);
+    cursor: pointer;
+}
+.paragraph .bse li{
+    padding: 10px;
+}
+.paragraph .bse:hover{
+    background-color: #0d8dbf;
+    color: white;
+    transition: 500ms;
+    }
+    .paragraph .bse:hover h3{
+    background-color: red;
+    color: white;
+    transition: 500ms;
+    }
+input:checked ~ .content .paragraph .bse{
+    margin-left: 500px;
+    margin-right: -580px;
+    margin-top: 20px;
+    border-style: solid;
+    padding-bottom: 35px;
+    border-color: rgb(255, 251, 0);
+    cursor: pointer;
+}
